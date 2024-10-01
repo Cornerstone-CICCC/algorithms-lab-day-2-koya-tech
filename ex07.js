@@ -3,5 +3,9 @@
 // (e.g., the presence of "@" and a ".").
 // Example: validateEmail("test@example.com") should return true.
 
+function validateEmail(email) {
+    return email.includes("@") && email.includes(".");
+}
+
 console.log(validateEmail("test@example.com")); // Expected output: true
 console.log(validateEmail("invalid-email.com")); // Expected output: false
